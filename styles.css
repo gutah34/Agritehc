@@ -3,6 +3,8 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    scoll-behavior: smooth;
     direction: rtl; /* اتجاه النص من اليمين لليسار */
 }
 
@@ -52,6 +54,7 @@ h1 {
     width: 100%;
     height: auto;
     border-radius: 5px; /* زوايا دائرية للصورة */
+    box-sizing: border-box;
 }
 
 .details-button {
@@ -76,6 +79,7 @@ h1 {
 .product-details img {
     display: block; /* عرض الصورة ككتلة */
     margin: 0 auto; /* توسيط الصورة */
+    box-sizing: border-box;
 }
 
 /* استجابة التصميم */
@@ -83,6 +87,7 @@ h1 {
     .product {
         width: 100%; /* عرض المنتج بالكامل في الشاشات الصغيرة */
         margin: 10px 0; /* مسافة بين المنتجات */
+        box-sizing: border-box;
     }
 
     header {
