@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    direction: rtl; /* اتجاه النص من اليمين لليسار */
+}
+
+header {
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+.logo {
+    width: 100px; /* حجم الشعار */
+    position: absolute;
+    top: 20px; /* تعديل موضع الشعار */
+    left: 20px; /* تعديل موضع الشعار */
+}
+
+h1 {
+    margin: 60px 0 20px; /* تعديل المسافات */
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* للسماح بتوزيع المنتجات بشكل أفضل */
+    padding: 20px;
+}
+
+.product {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px; /* زوايا دائرية */
+    margin: 15px;
+    padding: 20px;
+    text-align: center;
+    width: 250px; /* عرض أكبر للمنتجات */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* تأثير ظل */
+    transition: transform 0.2s; /* تأثير التحرك عند التمرير */
+}
+
+.product:hover {
+    transform: scale(1.05); /* تكبير المنتج عند التمرير عليه */
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px; /* زوايا دائرية للصورة */
+}
+
+.details-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* تأثير تدرج اللون عند التمرير */
+}
+
+.details-button:hover {
+    background-color: #218838;
+}
+
+.product-details {
+    text-align: center; /* توسيط النص */
+}
+
+.product-details img {
+    display: block; /* عرض الصورة ككتلة */
+    margin: 0 auto; /* توسيط الصورة */
+}
+
+/* استجابة التصميم */
+@media (max-width: 768px) {
+    .product {
+        width: 100%; /* عرض المنتج بالكامل في الشاشات الصغيرة */
+        margin: 10px 0; /* مسافة بين المنتجات */
+    }
+
+    header {
+        padding: 15px 0; /* تعديل الحشوة في الهيدر */
+    }
+
+    .logo {
+        width: 80px; /* حجم أصغر للشعار في الشاشات الصغيرة */
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px 0; /* تعديل الحشوة في الهيدر للشاشات الصغيرة جداً */
+    }
+
+    .logo {
+        width: 60px; /* حجم أصغر للشعار في الشاشات الصغيرة جداً */
+    }
+
+    h1 {
+        font-size: 1.5em; /* تصغير حجم الخط في الهيدر */
+    }
+
+    .details-button {
+        padding: 8px 10px; /* تقليل حجم الأزرار في الشاشات الصغيرة */
+    }
+}
